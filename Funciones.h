@@ -33,7 +33,7 @@ int menuInventario()
     printf("- Opcion 1: Visualizar Productos en Exitensia"); SaltoLinea();
     printf("- Opcion 2: Agregar Nuevo Producto"); SaltoLinea();
     printf("- Opcion 3: Editar Datos de un Producto"); SaltoLinea();
-    printf("- Opcion 4: Eliminar Producto"); SaltoLinea();
+    printf("- Opcion 4: Eliminar un Producto"); SaltoLinea();
     printf("- Opcion 5: Menu Proveedores"); SaltoLinea();
     printf("- Opcion 6: Salir"); SaltoLinea();
     printf("- Digite su opcion: ");
@@ -67,9 +67,21 @@ int menuPacientes()
 {
     int opc = 0;
     printf("******************* Menu - Gestion de Pacientes *******************"); SaltoLinea(); SaltoLinea();
-    printf("- Opcion 1: Visualizar Productos en Exitensia"); SaltoLinea();
-    printf("- Opcion 2: Agregar Nuevo Producto"); SaltoLinea();
-    printf("- Opcion 3: Editar Datos de un Producto"); SaltoLinea();
+    printf("- Opcion 1: Agregar Paciente"); SaltoLinea();
+    printf("- Opcion 2: Eliminar Paciente"); SaltoLinea();
+    printf("- Opcion 3: Visualizar Paciente"); SaltoLinea();
+    printf("- Opcion 4: Salir"); SaltoLinea();
+    printf("- Digite su opcion: ");
+    scanf("%d", &opc); CleanBuffer();
+    return opc;
+}
+int submenuPacientes()
+{
+    int opc = 0;
+    printf("******************* Menu - Visualizar Pacientes *******************"); SaltoLinea(); SaltoLinea();
+    printf("- Opcion 1: Datos del Paciente"); SaltoLinea();
+    printf("- Opcion 2: Datos de Emergencia"); SaltoLinea();
+    printf("- Opcion 3: Datos Clinicos"); SaltoLinea();
     printf("- Opcion 4: Salir"); SaltoLinea();
     printf("- Digite su opcion: ");
     scanf("%d", &opc); CleanBuffer();
