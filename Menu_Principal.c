@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
         int bandera3 = 0;
         switch (opcion) //switch principal
         {
-            case 1://Menu Invetario
+            case 1://Menu - Gestión de Invetario
                 while (!bandera2)
                 {
                     system("cls");
@@ -57,19 +57,19 @@ int main(int argc, char const *argv[])
                             CleanBuffer();
                         }
                         break;
-                    case 2:
+                    case 2://Agregar nuevo producto
                         system("cls");
                         CleanBuffer();
                         break;
-                    case 3:
+                    case 3: //Editar datos de un producto
                         system("cls");
                         CleanBuffer();
                         break;
-                    case 4:
+                    case 4: //Eliminar un producto
                         system("cls");
                         CleanBuffer();                        
                         break;
-                    case 5:
+                    case 5: //Menu Proveedores
                         while (!bandera2)
                         {
                             system("cls");
@@ -77,23 +77,23 @@ int main(int argc, char const *argv[])
                             opcSMenu = menuProveedores();
                             switch (opcSMenu)
                             {
-                            case 1:
+                            case 1: //Visualizar proveedores
                                 system("cls");
                                 CleanBuffer();
                                 break;
-                            case 2:
+                            case 2: //Agregar nuevo proveedor
                                 system("cls");
                                 CleanBuffer();
                                 break;
-                            case 3:
+                            case 3: //Editar datos de un proveedor
                                 system("cls");
                                 CleanBuffer();
                                 break;
-                            case 4:
+                            case 4: //Eliminar Proveedor
                                 system("cls");
                                 CleanBuffer();
                                 break;
-                            case 5:
+                            case 5: //Salir
                                 system("cls");
                                 bandera2 = 1;
                                 CleanBuffer();
@@ -103,7 +103,7 @@ int main(int argc, char const *argv[])
                             }
                         }                        
                         break;
-                    case 6:
+                    case 6: //Salir
                         system("cls");
                         bandera2 = 1;
                         CleanBuffer();
@@ -115,7 +115,7 @@ int main(int argc, char const *argv[])
                 }                
                 break;
             
-            case 2:
+            case 2: //Menu - Gestión de Facturación
                 while (!bandera2)
                 {
                     bandera2 = 0;
@@ -126,7 +126,7 @@ int main(int argc, char const *argv[])
                     break;
                 }
             
-            case 3:
+            case 3: //Menu - Gestión de Pacientes
                 system("cls");
                 opcSMenu = menuPacientes();
                 CleanBuffer();
