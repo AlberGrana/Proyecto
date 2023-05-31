@@ -119,18 +119,12 @@ int obtenerNumeroFactura()
 }
 
 int menuFacturacion()
-{   
+{    
     int numFactura = obtenerNumeroFactura();
+    int opc;
     while (1)
     {
-        
-
-        int opc = 0;
-        char nombreVendedor[50];
-        char nombreCliente[50];
-        int numProductos;
-       
-
+        system("cls");
         printf("******************* Menu - Gestion de la Facturacion *******************\n\n");
         printf("- Opcion 1: Crear Nueva factura\n"); 
         printf("- Opcion 2: Visualizar Facturas\n");
@@ -139,6 +133,10 @@ int menuFacturacion()
         scanf("%d", &opc); system("cls");        
 
         if (opc == 1) {
+            char nombreVendedor[50];
+            char nombreCliente[50];
+            int numProductos;
+
             printf("Ingrese el nombre del vendedor: ");
             scanf("%s", nombreVendedor);
             printf("Ingrese el nombre del cliente: ");
@@ -184,6 +182,7 @@ int menuFacturacion()
         } else {
             printf("Opción inválida. Por favor, ingrese una opción válida.\n");
         }
-        return opc;
-    }   
+    }
+
+    return 0;
 }
