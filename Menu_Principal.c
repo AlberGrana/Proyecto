@@ -132,7 +132,7 @@ int main(int argc, char const *argv[])
                 CleanBuffer();
                 break;
             
-            case 4: 
+            case 4: //Salir de ¡ZAS!CLINIC
                 CleanBuffer();
                 SaltoLinea();   printf("Hasta pronto!!!");  SaltoLinea();
                 bandera = 1;
